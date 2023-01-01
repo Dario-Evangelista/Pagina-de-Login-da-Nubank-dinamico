@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Midia type*/
+
+ @media (max-width: 589px) {
+    form{
+        position:sticky;
+        background: rgb(255, 255, 255);
+        width: 448px;
+        height: 576px;
+        max-height: 576px;
+        border-radius: 1.5%;
+        margin: 20px auto auto auto;
+        transition: all 0.2s;
+    }
+
+    #logo-login{
+        transform: translateY(20px);
+        transition: all 0.2s;
+    }
+ }
+
+
+ @media (min-width: 590px) and (max-width:1980px) {
+
+    form{
+        position: relative;
+        background: #fff;
+        width: 448px;
+        height: 576px;
+        max-height: 576px;
+        border-radius: 1.5%;
+        margin: 150px auto auto auto;
+        transition: all 0.2s;
+    }
+
+    #logo-login{
+        transition: all 0.2s;
+    }
+ }
+
+
+@font-face {
+    font-family: Nubank;
+    src: url("../Fonte/GraphikLCG-Medium.woff");
+}
+
+body{
+    background-color: #820AD1;
+    font-family: Nubank;
+}
+
+#logo-login{
+    position: fixed;
+    margin: 20px 0 0 30px;
+}
+
+svg{
+    height: 45px;
+    width: 70;
+}
+
+#container{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1920px;
+    margin-bottom: 0;
+}
+
+
+
+#login-caixa{
+    position: relative;
+    width: 320px;
+    margin: auto;
+}
+
+header {
+    width: 320px;
+    color: rgba(0, 0, 0, 0.827);
+    padding-top: 60px;
+    padding-bottom: 70px;
+    margin: auto;
+}
+
+header p {
+    margin: auto;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.inp-login, .inp-login-senha {
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.inp-login-senha{
+    padding-top: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.inp-login label{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    color: rgba(0, 0, 0, 0.473);
+    transition: all 0.3s;
+}
+
+.inp-login-senha label {
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    bottom: 20px;
+    color: rgba(0, 0, 0, 0.473);
+    transition: all 0.3s;
+}
+
+.input{
+    width: 100%;
+    border: none;
+    border-bottom: dotted rgba(0, 0, 0, 0.305) 1px;
+    outline: none;
+    font-size: 10pt;
+}
+
+form .inp-login .input:focus ~ label,
+form .inp-login-senha .input:focus ~ label,
+form .inp-login .input:valid ~ label,
+form .inp-login-senha .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 10pt;
+    color: #820AD1;
+}
+
+form .inp-login-senha .input:focus,
+form .inp-login .input:focus {
+    bottom: 10px;
+    position: relative;
+    border-bottom: #820AD1 dotted 1px;
+}
+
+.continuar{
+    width: 100%;
+    height: 70px;
+    margin-top: 35px;
+    border: #820AD1 solid 1px;
+    font-size: 10pt;
+    color: #820AD1;
+    font-family: Fontnubank, sans-serif;
+    background: none;
+    text-align: center;
+    border-radius: 3%;
+    margin-top: 60px;
+}
+
+#link-cad{
+    margin-top: 45;
+    text-align: center;
+}
+
+#link-cad a{
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #820AD1;
+}
+
+/*Dario Evangelista*/
